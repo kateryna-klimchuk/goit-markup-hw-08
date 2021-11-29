@@ -1,0 +1,29 @@
+.client-list {
+    @extend %flex;
+    list-style: none;    
+    justify-content: space-between;
+}
+
+.client-list__link {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px;
+    border-radius: 4px;
+    border: 1px solid $client-logo-normal;
+    
+    color: $client-logo-normal;
+
+    transition: color 250ms $transition-timing,
+    border-color 250ms $transition-timing;
+}
+
+.client-list__icon {
+    fill: currentColor;
+}
+
+.client-list__link:hover,
+.client-list__link:focus {
+    color: $client-logo-accent;
+    border-color: $client-logo-accent;
+}

@@ -1,0 +1,21 @@
+%flex {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+
+%button {
+    border: transparent;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+%btn-expanded {
+    color: $main-white;
+    background-color: $blue-accent;
+    letter-spacing: 0.06em;
+    font-weight: 700;
+    line-height: 1.87;
+    margin-top: 30px;
+}

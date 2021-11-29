@@ -1,0 +1,21 @@
+.our-work {
+    padding-top: 94px;
+}
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 50px;
+}
+.our-work-list__item {
+    list-style: none;
+    margin: 0;
+}
+.our-work-list {
+    @extend %flex;
+}
+.our-work-list__item:not(:last-child) {
+    margin-right: 30px;
+}

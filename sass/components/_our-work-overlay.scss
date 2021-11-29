@@ -1,0 +1,26 @@
+
+.our-work-list__thumb {
+    position: relative;
+}
+
+
+.our-work-list__cover {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+
+    margin: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    color: $main-white;
+
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

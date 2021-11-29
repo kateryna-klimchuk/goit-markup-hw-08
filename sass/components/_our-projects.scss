@@ -1,0 +1,103 @@
+.project {
+    @extend %flex;
+    list-style: none;
+    text-decoration: none;
+    flex-wrap: wrap;
+}
+
+.project__name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    list-style: none;
+    margin: 0;
+    padding-left: 24px;
+    padding-top: 20px;
+}
+.project__product {
+    color: $secondary-text-color;
+    font-size: 16px;
+    line-height: 1.87;
+    margin: 0;
+    padding-top: 4px;
+    padding-left: 24px;
+    padding-bottom: 20px;
+}
+
+.project__item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border: 1px solid rgba(238, 238, 238, 1);
+    background: #FFFFFF;
+    flex-basis: calc(100% / 3 - 30px);
+}
+.project__item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.project__item:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+}
+.project__link {
+    display: block;
+    text-decoration: none;
+    color: $primery-text-color;
+
+    transition: box-shadow 250ms $transition-timing;
+
+    &:hover {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+    &:focus {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+}
+
+
+.project__thumb {
+    position: relative;
+    overflow: hidden;
+
+}
+
+.project__text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    padding: 63px 24px;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 18px;
+    line-height: 1.56;
+    color: $main-white;
+    background-color: $portfolio-cards-overlay;
+
+    opacity: 0;
+
+    transform: translateY(100%);
+    transition: opacity 250ms $transition-timing,
+    transform 250ms $transition-timing;
+
+    .project__link:hover & {
+    opacity: 1;
+    transform: translateY(0);
+    }
+
+    .project__link:focus & {
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
+
+.project__link:hover .project__thumb::before,
+.project__link:focus .project__thumb::before {
+    opacity: 1;
+    transform: translateY(0);
+}

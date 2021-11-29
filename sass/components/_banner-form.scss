@@ -1,0 +1,150 @@
+.modal-form {
+    @extend %flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.modal-form__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    margin-bottom: 12px;
+}
+
+
+
+.modal-list__label {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: $secondary-text-color;
+    margin-bottom: 4px;
+}
+
+.modal-list__input {
+    position: relative;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    height: 40px;
+    padding-left: 42px;
+    transition: border 250ms $transition-timing;
+
+    &:focus {
+    outline: none;
+    border: 1px solid $blue-accent;
+}
+    &:focus + .modal-list__icon {
+    fill: $blue-accent;
+}
+}
+
+.modal-list [placeholder] {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+    padding-left: 16px;
+    padding-top: 12px;
+}
+.modal-list:nth-child(n + 3) {
+    margin-top: 10px;
+}
+
+
+.modal-list__icon {
+    position: absolute;
+    top: 48%;
+    left: 12px;
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+    transition: fill 250ms $transition-timing;
+
+}
+
+.modal-list {
+    @extend %flex;
+    list-style: none;    
+    text-align: start;
+    flex-direction: column;
+    position: relative;
+}
+
+
+
+.modal-list__textarea {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    height: 120px;
+    margin-bottom: 20px;
+    transition: border 250ms $transition-timing;
+
+    &:focus {
+    outline: none;
+    border: 1px solid $blue-accent;
+}
+}
+
+
+
+.modal-checkbox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.modal-checkbox__input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    position: absolute;
+}
+
+.modal-checkbox__label {
+    font-size: 14px;
+    line-height: 1.71;
+    color: $secondary-text-color;
+    white-space: nowrap;
+}
+
+
+.modal-checkbox__link {
+    color: $blue-accent;
+}
+
+
+.modal-checkbox__input:checked + .modal-checkbox__icon {
+    background-color: $blue-accent;
+    border: none;
+}
+
+
+.modal-checkbox__icon {
+    fill: $main-white;
+    border-radius: 2px;
+    border: 1px solid $primery-text-color;
+    width: 16px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-btn {
+    @extend %button;
+    @extend %btn-expanded;
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+    padding: 10px 55px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}

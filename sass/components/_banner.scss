@@ -1,0 +1,36 @@
+.banner {
+    background-color: $main-background-color;
+    letter-spacing: 0.06em;
+    text-align: center;
+    padding: 200px 0;
+
+    background-image: linear-gradient(to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url("../images/banner-img.jpg");
+    max-width: 1600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: #C4C4C4;
+
+}
+.banner__text {
+    color: $main-white;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    white-space: pre-line;
+}
+
+.banner__button {
+    @extend %button;
+    @extend %btn-expanded;
+    padding: 10px 32px;
+}
+
