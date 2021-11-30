@@ -25,3 +25,9 @@ $transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
 
 $main-font-family: Roboto, sans-serif;
 $second-font-family: Raleway, sans-serif;
+
+// Adaptive break-points
+
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1200px;

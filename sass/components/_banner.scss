@@ -16,7 +16,15 @@
 
     background-color: #C4C4C4;
 
+
+        @media screen and (max-width: $mobile) {
+            max-width: $mobile;
+            background-size: cover;        }
 }
+
+
+
+
 .banner__text {
     color: $main-white;
     font-weight: 900;
@@ -26,6 +34,14 @@
     text-transform: uppercase;
     margin: 0;
     white-space: pre-line;
+
+
+    @media screen and (max-width: $mobile) {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+}
 }
 
 .banner__button {

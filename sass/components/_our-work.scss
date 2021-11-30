@@ -1,5 +1,9 @@
 .our-work {
     padding-top: 94px;
+
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
 }
 .section-title {
     font-weight: 700;

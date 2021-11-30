@@ -15,6 +15,34 @@
         <div class="conteiner main-nav">
         <nav class="nav">
             <a href="./index.html" class="logo header-logo"> <span class="logo__accent">Web</span>Studio</a>
+            <button class="menu-toggle js-open-menu is-open" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="open-menu" width="40" height="40" aria-label="open and close header menu">
+                    <use href="./images/icons.svg#icon-menu_40px"></use>
+                </svg>
+            </button>
+            <div class="menu-container js-menu-container is-open" id="mobile-menu">
+                <button class="menu-toggle js-close-menu">
+                    <svg class="close-menu" width="40" height="40" aria-label="open and close header menu">
+                        <use href="./images/icons.svg#icon-close_40px"></use>
+                    </svg>
+                </button>
+                <ul class="mobile-menu">
+                    <li class="mobile-menu__item mobile-menu__item--current">Студия</li>
+                    <li class="mobile-menu__item">Портфолио</li>
+                    <li class="mobile-menu__item">Контакты</li>
+                </ul>
+                <ul class="mobile-contacts">
+                    <li class="mobile-contacts__item mobile-contacts__item--phone">+38 096 111 11 11</li>
+                    <li class="mobile-contacts__item">info@devstudio.com</li>
+                </ul>
+                <ul class="mobile-social">
+                    <li class="mobile-social__item">Instagram</li>
+                    <li class="mobile-social__item">Twitter</li>
+                    <li class="mobile-social__item">Facebook</li>
+                    <li class="mobile-social__item">LinkedIn</li>
+                </ul>
+            </div>
+            
             <ul class="header-nav">
                 <li class="item header-nav__item"><a href="./index.html" class="link header-nav__link header-nav__link--current">Студия</a></li>
                 <li class="item header-nav__item"><a href="./portfolio.html" class="link header-nav__link">Портфолио</a></li>
@@ -353,6 +381,7 @@
 
 
 
+
     <!--Footers content-->
 
     <footer class="footer">
@@ -420,5 +449,9 @@
         </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
 </body>
 </html>
