@@ -16,10 +16,42 @@
         <div class="conteiner main-nav">
             <nav class="nav">
                 <a href="./index.html" class="logo header-logo"> <span class="logo__accent">Web</span>Studio</a>
+                <button class="menu-toggle js-open-menu is-open" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg class="open-menu" width="40" height="40" aria-label="open and close header menu">
+                        <use href="./images/icons.svg#icon-menu_40px"></use>
+                    </svg>
+                </button>
+                <div class="menu-container js-menu-container is-open" id="mobile-menu">
+                    <button class="menu-toggle js-close-menu">
+                        <svg class="close-menu" width="40" height="40" aria-label="open and close header menu">
+                            <use href="./images/icons.svg#icon-close_40px"></use>
+                        </svg>
+                    </button>
+                    <ul class="mobile-menu">
+                        <li class="mobile-menu__item"><a href="./index.html"
+                                class="link mobile-menu__link mobile-menu__link--current">Студия</a></li>
+                        <li class="mobile-menu__item"><a href="./portfolio.html"
+                                class="link mobile-menu__link">Портфолио</a></li>
+                        <li class="mobile-menu__item"><a href="" class="link mobile-menu__link">Контакты</a></li>
+                    </ul>
+                    <ul class="mobile-contacts">
+                        <li class="mobile-contacts__item"><a href="tel:+380961111111"
+                                class="link mobile-contacts__link mobile-contacts__link--phone">+38 096 111 11 11</a></li>
+                        <li class="mobile-contacts__item"><a href="mailto:info@devstudio.com"
+                                class="link mobile-contacts__link">info@devstudio.com</a></li>
+                    </ul>
+                    <ul class="mobile-social">
+                        <li class="mobile-social__item">Instagram</li>
+                        <li class="mobile-social__item">Twitter</li>
+                        <li class="mobile-social__item">Facebook</li>
+                        <li class="mobile-social__item">LinkedIn</li>
+                    </ul>
+                </div>
+    
                 <ul class="header-nav">
                     <li class="item header-nav__item"><a href="./index.html"
-                            class="link header-nav__link">Студия</a></li>
-                    <li class="item header-nav__item"><a href="./portfolio.html" class="link header-nav__link header-nav__link--current">Портфолио</a>
+                            class="link header-nav__link header-nav__link--current">Студия</a></li>
+                    <li class="item header-nav__item"><a href="./portfolio.html" class="link header-nav__link">Портфолио</a>
                     </li>
                     <li class="item header-nav__item"><a href="" class="link header-nav__link">Контакты</a></li>
                 </ul>
