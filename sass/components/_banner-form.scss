@@ -13,7 +13,7 @@
     line-height: 1.15;
     margin: 0;
     padding: 0;
-    white-space: nowrap;
+    // white-space: nowrap;
     margin-bottom: 12px;
 }
 
@@ -110,8 +110,11 @@
 }
 
 .modal-checkbox__label {
-    font-size: 14px;
-    line-height: 1.71;
+    // font-size: 14px;
+        font-size: 12px;
+
+    line-height: 1.17;
+    // line-height: 1.71;
     color: $secondary-text-color;
     white-space: nowrap;
 }

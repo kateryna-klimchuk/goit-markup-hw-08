@@ -24,8 +24,8 @@
 
 .modal {
     position: absolute;
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    height: 609px;
     border-radius: 4px;
     top: 50%;
     left: 50%;
@@ -33,9 +33,26 @@
     transition: transform 250ms $transition-timing;
     padding: 40px;
 
-    
-    background-color: $modal-window-color;
+
+
+        background-color: $modal-window-color;
+
 }
+
+// .modal {
+//     position: absolute;
+//     width: 528px;
+//     height: 581px;
+//     border-radius: 4px;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%) scaleY(1);
+//     transition: transform 250ms $transition-timing;
+//     padding: 40px;
+
+    
+//     background-color: $modal-window-color;
+// }
 
 .modal__btn {
     display: flex;
