@@ -1,10 +1,15 @@
-// .project {
-//     @extend %flex;
-//     flex-wrap: wrap;
-// }
 .project {
     margin-top: 40px;
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -30px;
+        margin-bottom: -30px;
 }
+}
+
+
 .project__name {
     font-weight: 700;
     font-size: 18px;
@@ -26,19 +31,32 @@
 }
 
 .project__item {
-    // margin-right: 30px;
-    // margin-bottom: 30px;
     border: 1px solid rgba(238, 238, 238, 1);
     background: #FFFFFF;
-    flex-basis: calc(100% / 3 - 30px);
-}
-// .project__item:nth-child(3n) {
-//     margin-right: 0;
-// }
 
-// .project__item:nth-last-child(-n + 3) {
-//     margin-bottom: 0;
-// }
+    @media screen and (min-width: $tablet) {
+        flex-basis: calc(100% / 2 - 30px);
+        margin-right: 30px;
+        margin-bottom: 30px;
+
+    @media screen and (min-width: $desktop) {
+        margin-right: 30px;
+        margin-bottom: 30px;
+        flex-basis: calc(100% / 3 - 30px);
+
+}}
+
+@media screen and (min-width: $desktop) {
+.project__item:nth-child(3n) {
+    margin-right: 0;
+}
+}
+
+@media screen and (min-width: $desktop) {
+.project__item:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+}
+}
 
 .project__link {
     display: block;
@@ -46,21 +64,21 @@
 
     transition: box-shadow 250ms $transition-timing;
 
-    &:hover {
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    }
+    &:hover,
     &:focus {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     }
-
 }
 
 
 .project__thumb {
     position: relative;
     overflow: hidden;
-
 }
+
+.project__thumb img {
+    margin: auto;
+}}
 
 .project__text {
     position: absolute;
@@ -103,6 +121,3 @@
 }
 
 
-.project__thumb img {
-    margin: auto;
-}

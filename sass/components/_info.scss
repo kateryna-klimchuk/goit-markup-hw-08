@@ -50,11 +50,11 @@
 .info-list__item {
     margin-bottom: 30px;
 
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: $tablet){
         flex-basis: calc((100% - 60px) / 2);
         margin-left: 30px;
     }
-        @media screen and (min-width: 1200px){
+        @media screen and (min-width: $desktop){
             flex-basis: calc((100% - 120px) / 4);
     }
 }
