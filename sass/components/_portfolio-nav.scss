@@ -37,6 +37,7 @@
 .portfolio-nav__button {
     @extend %button;
     background-color: #F5F4FA;
+    color: inherit;
     font-weight: 500;
     line-height: 1.62;
     text-align: center;

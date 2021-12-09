@@ -60,7 +60,7 @@ screen and (min-resolution: 2dppx) {
     margin: 0;
     white-space: pre-line;
 
-    @media screen and (max-width: $mobile) {
+    @media screen and (max-width: $desktop) {
     font-weight: 900;
     font-size: 26px;
     line-height: 1.62;
