@@ -2,7 +2,11 @@
     @extend %mobile-flex;
 
 }
-
+@media screen and (max-width: 767px) {
+    .footer-social {
+        margin-top: 60px;
+    }
+}
 
 // .footer-social {
 //     display: block;

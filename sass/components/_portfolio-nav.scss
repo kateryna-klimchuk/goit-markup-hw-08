@@ -21,18 +21,14 @@
 .portfolio-nav__item {
     margin-bottom: 20px;
     
-    &:nth-child(-n + 2) {
+    &:nth-child(-n + 4) {
     margin-right: 8px;
 }
 }
 
-.portfolio-nav__item:nth-child(4) {
-    margin-right: 8px;
-}
 
 @media screen and (min-width: $tablet) {
     .portfolio-nav__item + .portfolio-nav__item {
-    // margin-left: 8px;
         margin-right: 8px;
 }
 }

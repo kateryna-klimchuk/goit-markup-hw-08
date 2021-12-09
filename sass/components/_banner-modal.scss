@@ -9,6 +9,9 @@
     opacity: 1;
     transition: opacity 250ms $transition-timing;
     z-index: 2;
+
+    padding: 93px 15px;
+    overflow-y: scroll;
 }
 
 .blackdrop.is-hidden {
@@ -23,36 +26,28 @@
 }
 
 .modal {
-    position: absolute;
-    width: 450px;
-    height: 609px;
-    border-radius: 4px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scaleY(1);
-    transition: transform 250ms $transition-timing;
     padding: 40px;
+    border-radius: 4px;
+    background-color: $modal-window-color;
 
+    @media screen and (min-width: $mobile) {
 
+        position: absolute;
+        max-width: 450px;
+        width: 100%;
 
-        background-color: $modal-window-color;
+        height: 609px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scaleY(1);
+        transition: transform 250ms $transition-timing;
+    }
 
+    @media screen and (min-width: $desktop) {
+        max-width: 528px;
+        height: 581px;
 }
-
-// .modal {
-//     position: absolute;
-//     width: 528px;
-//     height: 581px;
-//     border-radius: 4px;
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%) scaleY(1);
-//     transition: transform 250ms $transition-timing;
-//     padding: 40px;
-
-    
-//     background-color: $modal-window-color;
-// }
+}
 
 .modal__btn {
     display: flex;

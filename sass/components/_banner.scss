@@ -2,25 +2,52 @@
     background-color: $main-background-color;
     letter-spacing: 0.06em;
     text-align: center;
-    padding: 200px 0;
+    padding: 118px 0;
 
     background-image: linear-gradient(to right,
     rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)),
-    url("../images/banner-img.jpg");
+    url("/images/banner-mobile.jpg");
     max-width: 1600px;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     margin-left: auto;
     margin-right: auto;
 
     background-color: #C4C4C4;
 
+    @media screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url("/images/banner-mobile@2x.jpg");
+    }
 
-        @media screen and (max-width: $mobile) {
-            max-width: $mobile;
-            background-size: cover;        }
+    @media screen and (min-width: $desktop) {
+        background-image: linear-gradient(to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url("/images/banner-img.jpg");
+
+        padding: 200px 0;
+
+    }
+
+    @media screen and (min-width: $desktop) and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url("/images/banner@2x.jpg");
+    }
+
 }
+
+
 
 
 
@@ -35,7 +62,6 @@
     margin: 0;
     white-space: pre-line;
 
-
     @media screen and (max-width: $mobile) {
     font-weight: 900;
     font-size: 26px;
@@ -49,4 +75,3 @@
     @extend %btn-expanded;
     padding: 10px 32px;
 }
-

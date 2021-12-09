@@ -3,32 +3,37 @@
     position: relative;
 }
 
+.main-nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 @media screen and (min-width: $tablet) {
     .main-nav {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-    .nav {
+}}
+
+.nav {
+    width: 100%;
     display: flex;
     margin: 0;
     padding: 0;
-    justify-content: space-between;
     align-items: center;
-    // padding: 15px 16px;
+    justify-content: space-between;
+
+    @media screen and (min-width: $tablet) {
+        justify-content: start;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: auto;
+    }
 }
-}
 
-
-
-// .mobile-wrap {
-//     @extend %flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     padding: 16px 10px 16px 15px;
-//     width: 100vw;
-
-// }
 
 .header-nav,
 .header-address {
@@ -48,13 +53,18 @@
 .header-nav {
     align-items: center;
     justify-content: center;
-    margin-left: 93px;
+    margin-left: 88px;
 
     display: none;
 
 
     @media screen and (min-width: $tablet) {
         display: flex;
+    }
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        margin-left: 93px;
     }
 }
 
@@ -70,7 +80,6 @@
     padding-bottom: 32px;
 
     color: $primery-text-color;
-    text-decoration: none;
 
     &--current {
     color: $blue-accent;
@@ -79,12 +88,15 @@
 
 
 .header-address {
+    align-items: center;
+    justify-content: center;
     margin-left: auto;
     display: none;
 
 
     @media screen and (min-width: $tablet) {
         display: block;
+        
     }
     @media screen and (min-width: $desktop) {
         display: flex;
@@ -100,7 +112,6 @@
 
 .header-address__link {
     color: $secondary-text-color;
-    text-decoration: none;
     display: flex;
     align-items: center;
 
