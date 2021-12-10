@@ -1,5 +1,4 @@
 
-
 .info-list__head {
     font-weight: 700;
     font-size: 14px;
@@ -7,7 +6,14 @@
     text-transform: uppercase;
     margin-bottom: 0;
     margin-top: 30px;
+    text-align: center;
 }
+@media screen and (min-width: $tablet) {
+    .info-list__head {
+        text-align: start;
+    }
+}
+
 .info-list__text {
     color: $secondary-text-color;
     font-size: 14px;

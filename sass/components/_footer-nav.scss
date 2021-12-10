@@ -46,16 +46,6 @@
     margin-top: 9px;
 }
 
-.footer-address__link {
-    transition: color 250ms $transition-timing;
-
-    &:hover,
-    &:focus {
-    color: $blue-accent;
-    }
-}
-
-
 
 .link.contact {
     font-size: 14px;
@@ -66,6 +56,15 @@
     font-size: 14px;
     line-height: 1.71;
     color: $main-white;
+}
+
+.footer-address__link {
+    transition: color 250ms $transition-timing;
+
+    &:hover,
+    &:focus {
+    color: $blue-accent;
+    }
 }
 
 .main-footer {
