@@ -9,9 +9,17 @@
     background: $main-white;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     margin-bottom: 30px;
+    // min-height: 622px;
+
+    @media screen and (min-width: $tablet) {
+        min-height: 536px;
+    }
+
+
 
     @media screen and (min-width: $desktop) {
         margin-bottom: 0;
+        min-height: 428px;
     }
 }
 
@@ -62,29 +70,20 @@
     }
 }
 
-// .team-list {
-//     @extend %flex;
-//     height: 428px;
-// }
-// .team-list__item:not(:last-child) {
-//     margin-right: 30px;
-// }
-
 
 .team-links {
     @extend %flex;
-    // padding-right: 0px;
     border: 1px solid transparent;
     width: 206px;
-    height: 44px;
     margin: auto;
-    // margin: 16px 32px 30px;
-
 }
+
 .team-links__link {
     display: block;
     padding-left: 0;
     padding: 12px;
+    margin-bottom: 24px;
+
     width: 44px;
     height: 44px;
     color: $client-logo-normal;
